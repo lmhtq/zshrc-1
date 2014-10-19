@@ -13,6 +13,14 @@ sources+="$ZSH_CONFIG/options.zsh"
 sources+="$ZSH_CONFIG/prompt.zsh"
 sources+="$ZSH_CONFIG/functions.zsh"
 sources+="$ZSH_CONFIG/aliases.zsh"
+sources+="$ZSH_CONFIG/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+eval `dircolors $ZSH_CONFIG/dircolors-solarized/dircolors.256dark`
+#eval `dircolors $ZSH_CONFIG/dircolors-solarized/dircolors.ansi-universal`
+#eval `dircolors $ZSH_CONFIG/dircolors-solarized/dircolors.ansi-dark`
+#eval `dircolors $ZSH_CONFIG/dircolors-solarized/dircolors.ansi-light`
+export TERM=xterm-256color        # for common 256 color terminals (e.g. gnome-terminal)
+export TERM=screen-256color       # for a tmux -2 session (also for screen)
+#export TERM=rxvt-unicode-256color # for a colorful rxvt unicode session
 
 # highlights the live command line
 # Cloned From: git://github.com/nicoulaj/zsh-syntax-highlighting.git
