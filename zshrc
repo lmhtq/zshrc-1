@@ -46,7 +46,8 @@ sources+="$ZSH_CONFIG/fasd.zsh"
 # Private aliases and adoptions added at the very end (e.g. to start byuobu)
 sources+="$ZSH_CONFIG/private.final.zsh"
 
-
+# Add customized paths
+sources+="$ZSH_CONFIG/path.sh"
 
 # try to include all sources
 foreach file (`echo $sources`)
